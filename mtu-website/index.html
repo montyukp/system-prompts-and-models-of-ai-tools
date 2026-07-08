@@ -3,72 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MTU Projects — Digital Marketing Solutions | Leeds, UK</title>
-  <meta name="description" content="MTU Projects helps small and medium businesses across Leeds and the UK generate more leads and grow their online presence with SEO, PPC, AI automation, social media marketing and website design.">
+  <title>MTU Projects — Websites & Automations for Small Businesses | Leeds</title>
+  <meta name="description" content="I build small businesses a website that explains what they do, plus simple automations that save time. Then I keep it running — so it's never something you have to think about again. Based in Leeds.">
   <meta name="theme-color" content="#1E1E20">
-  <meta property="og:title" content="MTU Projects — Digital Marketing Solutions">
-  <meta property="og:description" content="Helping businesses grow their online presence and generate leads across Leeds and the UK.">
-  <meta property="og:url" content="https://www.mtuprojects.com">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    /* ============================================================
+    /* =============================================
        TOKENS
-    ============================================================ */
+    ============================================= */
     :root {
-      --green:         #556653;
-      --green-d:       #3E4E3C;
-      --green-l:       #7A9B77;
-      --green-faint:   #EEF3EE;
-      --charcoal:      #1E1E20;
-      --charcoal-2:    #252527;
-      --charcoal-3:    #2E2E31;
-      --white:         #FFFFFF;
-      --off-white:     #F6F6F4;
-      --grey-light:    #E8E8E8;
-      --grey-mid:      #7B7B7B;
-
-      --bg:            var(--off-white);
-      --surface:       var(--white);
-      --ink:           var(--charcoal);
-      --ink-muted:     var(--grey-mid);
-      --ink-faint:     #ADADAD;
-      --accent:        var(--green);
-      --accent-d:      var(--green-d);
-      --accent-l:      var(--green-l);
-      --accent-faint:  var(--green-faint);
-      --border:        var(--grey-light);
-      --border-s:      #CECECE;
+      --green:      #556653;
+      --green-d:    #3E4E3C;
+      --green-l:    #7A9B77;
+      --charcoal:   #1E1E20;
+      --charcoal-2: #272729;
+      --white:      #FFFFFF;
+      --grey-light: #E8E8E8;
+      --grey-mid:   #7B7B7B;
+      --grey-faint: #F3F3F2;
 
       --font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      --max-w: 1160px;
-      --gutter: clamp(20px, 4vw, 48px);
-      --r: 10px;
-      --r-lg: 16px;
+      --max-w: 1080px;
+      --gutter: clamp(20px, 5vw, 48px);
+      --r: 8px;
+      --r-lg: 14px;
       --r-pill: 100px;
     }
 
-    /* ============================================================
+    /* =============================================
        RESET
-    ============================================================ */
+    ============================================= */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       font-family: var(--font);
-      background: var(--bg);
-      color: var(--ink);
+      background: var(--white);
+      color: var(--charcoal);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
     img { max-width: 100%; display: block; }
     a { color: inherit; text-decoration: none; }
     ul { list-style: none; }
     button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
+    /* =============================================
+       LAYOUT
+    ============================================= */
     .wrap {
       width: 100%;
       max-width: var(--max-w);
@@ -76,56 +61,61 @@
       padding: 0 var(--gutter);
     }
 
-    /* ============================================================
+    section { padding: 88px 0; }
+    @media (max-width: 640px) { section { padding: 60px 0; } }
+
+    /* =============================================
        TYPOGRAPHY
-    ============================================================ */
+    ============================================= */
     .eyebrow {
       display: inline-block;
       font-size: 0.6875rem;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--green);
+      margin-bottom: 16px;
     }
 
-    .t-display {
-      font-size: clamp(2.25rem, 4.5vw + 0.5rem, 4rem);
+    h1 {
+      font-size: clamp(2.125rem, 5vw + 0.5rem, 3.75rem);
       font-weight: 800;
-      line-height: 1.07;
+      line-height: 1.1;
       letter-spacing: -0.03em;
       text-wrap: balance;
     }
 
-    .t-h2 {
-      font-size: clamp(1.75rem, 3vw + 0.5rem, 2.75rem);
+    h2 {
+      font-size: clamp(1.625rem, 3vw + 0.25rem, 2.375rem);
       font-weight: 700;
-      line-height: 1.15;
+      line-height: 1.2;
       letter-spacing: -0.025em;
       text-wrap: balance;
     }
 
-    .t-h3 {
+    h3 {
       font-size: 1.0625rem;
-      font-weight: 600;
-      line-height: 1.4;
+      font-weight: 700;
+      line-height: 1.35;
       letter-spacing: -0.01em;
     }
 
-    .t-lead {
+    .lead {
       font-size: clamp(1rem, 1.5vw + 0.2rem, 1.125rem);
       font-weight: 300;
       line-height: 1.75;
+      color: rgba(255,255,255,0.55);
     }
 
-    .t-body {
+    .body-text {
       font-size: 0.9375rem;
-      line-height: 1.7;
-      color: var(--ink-muted);
+      line-height: 1.72;
+      color: var(--grey-mid);
     }
 
-    /* ============================================================
+    /* =============================================
        BUTTONS
-    ============================================================ */
+    ============================================= */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -142,38 +132,39 @@
     }
     .btn:active { transform: translateY(1px); }
 
-    .btn-arrow { width: 16px; height: 16px; transition: transform 0.17s; flex-shrink: 0; }
-    .btn:hover .btn-arrow { transform: translateX(3px); }
+    .btn-green {
+      background: var(--green);
+      color: #fff;
+      border: 2px solid var(--green);
+    }
+    .btn-green:hover {
+      background: var(--green-d);
+      border-color: var(--green-d);
+      box-shadow: 0 6px 20px rgba(85,102,83,0.3);
+    }
 
-    .btn-green { background: var(--green); color: #fff; }
-    .btn-green:hover { background: var(--green-d); box-shadow: 0 6px 20px rgba(85,102,83,0.35); }
-
-    .btn-ghost-white {
+    .btn-white-outline {
       background: transparent;
       color: rgba(255,255,255,0.8);
-      border: 1.5px solid rgba(255,255,255,0.25);
+      border: 2px solid rgba(255,255,255,0.25);
     }
-    .btn-ghost-white:hover { border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); color: #fff; }
-
-    .btn-ghost-dark {
-      background: transparent;
-      color: var(--ink);
-      border: 1.5px solid var(--border-s);
+    .btn-white-outline:hover {
+      border-color: rgba(255,255,255,0.6);
+      color: #fff;
     }
-    .btn-ghost-dark:hover { border-color: var(--ink); }
 
     .btn-sm { padding: 9px 18px; font-size: 0.8125rem; }
 
-    /* ============================================================
+    /* =============================================
        NAV
-    ============================================================ */
-    .site-nav {
+    ============================================= */
+    .nav {
       position: sticky;
       top: 0;
-      z-index: 200;
-      background: rgba(30,30,32,0.96);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      z-index: 100;
+      background: rgba(30,30,32,0.97);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(255,255,255,0.06);
     }
 
@@ -181,55 +172,45 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 68px;
-      gap: 32px;
+      height: 64px;
+      gap: 24px;
     }
 
     .nav-logo {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 9px;
       flex-shrink: 0;
     }
 
     .nav-mark {
-      width: 36px;
-      height: 36px;
+      width: 32px;
+      height: 32px;
       background: var(--green);
-      border-radius: 8px;
+      border-radius: 7px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
     }
 
-    .nav-name {
+    .nav-wordmark {
       font-size: 0.9375rem;
       font-weight: 700;
       color: white;
       letter-spacing: -0.01em;
-      display: block;
-      line-height: 1.15;
-    }
-
-    .nav-tagline {
-      font-size: 0.625rem;
-      font-weight: 400;
-      color: rgba(255,255,255,0.4);
-      letter-spacing: 0.03em;
-      display: block;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 24px;
     }
 
     .nav-link {
       font-size: 0.875rem;
       font-weight: 500;
-      color: rgba(255,255,255,0.55);
+      color: rgba(255,255,255,0.5);
       transition: color 0.15s;
     }
     .nav-link:hover { color: white; }
@@ -238,751 +219,421 @@
       display: none;
       flex-direction: column;
       gap: 5px;
-      padding: 4px;
+      padding: 3px;
     }
     .nav-toggle span {
       display: block;
-      width: 22px;
+      width: 21px;
       height: 1.5px;
       background: rgba(255,255,255,0.65);
       border-radius: 2px;
       transition: all 0.2s;
     }
 
-    .nav-mobile {
+    .nav-drawer {
       display: none;
       flex-direction: column;
       background: var(--charcoal);
       border-top: 1px solid rgba(255,255,255,0.05);
-      padding: 8px 0 24px;
+      padding: 8px 0 20px;
     }
-    .nav-mobile.open { display: flex; }
-    .nav-mobile a {
-      padding: 14px var(--gutter);
-      font-size: 1rem;
-      font-weight: 500;
-      color: rgba(255,255,255,0.7);
-      border-bottom: 1px solid rgba(255,255,255,0.04);
-    }
-    .nav-mobile a:last-child { border-bottom: none; }
-    .nav-mobile .btn { margin: 16px var(--gutter) 0; justify-content: center; }
+    .nav-drawer.open { display: flex; }
 
-    @media (max-width: 720px) {
+    .nav-drawer a {
+      padding: 13px var(--gutter);
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.65);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: color 0.15s;
+    }
+    .nav-drawer a:hover { color: white; }
+    .nav-drawer .btn { margin: 14px var(--gutter) 0; justify-content: center; }
+
+    @media (max-width: 680px) {
       .nav-links, .nav-cta { display: none; }
       .nav-toggle { display: flex; }
     }
 
-    /* ============================================================
+    /* =============================================
        HERO
-    ============================================================ */
-    .hero {
+    ============================================= */
+    #home {
       background: var(--charcoal);
+      padding: 96px 0 88px;
       position: relative;
       overflow: hidden;
-      padding: 96px 0 80px;
     }
 
-    .hero-grid {
+    /* subtle dot texture */
+    #home::before {
+      content: '';
       position: absolute;
       inset: 0;
-      background-image: radial-gradient(circle, rgba(85,102,83,0.14) 1px, transparent 1px);
-      background-size: 32px 32px;
+      background-image: radial-gradient(circle, rgba(85,102,83,0.13) 1px, transparent 1px);
+      background-size: 28px 28px;
       pointer-events: none;
     }
 
-    .hero-glow {
+    /* soft green glow top-right */
+    #home::after {
+      content: '';
       position: absolute;
-      top: -120px;
-      right: -80px;
-      width: 520px;
-      height: 520px;
-      background: radial-gradient(circle, rgba(85,102,83,0.2) 0%, transparent 65%);
+      top: -100px;
+      right: -60px;
+      width: 440px;
+      height: 440px;
+      background: radial-gradient(circle, rgba(85,102,83,0.18) 0%, transparent 60%);
       pointer-events: none;
     }
 
     .hero-inner {
       position: relative;
       z-index: 1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      align-items: center;
-    }
-
-    .hero-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      background: rgba(85,102,83,0.18);
-      border: 1px solid rgba(85,102,83,0.38);
-      border-radius: var(--r-pill);
-      margin-bottom: 28px;
-    }
-
-    .hero-dot {
-      width: 6px;
-      height: 6px;
-      background: var(--green-l);
-      border-radius: 50%;
-      animation: throb 2.2s ease-in-out infinite;
-    }
-
-    @keyframes throb {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.8); }
-    }
-
-    .hero-pill-text {
-      font-size: 0.6875rem;
-      font-weight: 600;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: var(--green-l);
+      max-width: 720px;
     }
 
     .hero-heading {
       color: white;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
-    .hero-heading .accent { color: var(--green-l); }
+    .hero-heading .green { color: var(--green-l); }
 
     .hero-sub {
-      font-size: clamp(1rem, 1.5vw + 0.2rem, 1.125rem);
+      color: rgba(255,255,255,0.52);
+      font-size: clamp(1rem, 1.5vw + 0.2rem, 1.1875rem);
       font-weight: 300;
-      color: rgba(255,255,255,0.5);
       line-height: 1.75;
       margin-bottom: 36px;
-      max-width: 460px;
+      max-width: 580px;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 44px;
     }
 
-    .hero-trust {
-      padding-top: 28px;
-      border-top: 1px solid rgba(255,255,255,0.07);
-    }
-
-    .hero-trust-label {
-      font-size: 0.6875rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.28);
-      margin-bottom: 10px;
-    }
-
-    .hero-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-
-    .hero-chip {
-      padding: 5px 12px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.09);
-      border-radius: var(--r-pill);
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: rgba(255,255,255,0.5);
-    }
-
-    /* dashboard panel */
-    .hero-panel {
-      background: var(--charcoal-2);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: var(--r-lg);
-      padding: 24px;
-      box-shadow: 0 32px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.04);
-    }
-
-    .panel-titlebar {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding-bottom: 16px;
-      margin-bottom: 20px;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .panel-dots { display: flex; gap: 5px; }
-    .panel-dot { width: 10px; height: 10px; border-radius: 50%; }
-    .panel-dot:nth-child(1) { background: #FF5F57; }
-    .panel-dot:nth-child(2) { background: #FEBC2E; }
-    .panel-dot:nth-child(3) { background: #28C840; }
-
-    .panel-title { font-size: 0.6875rem; color: rgba(255,255,255,0.3); font-weight: 500; margin-left: 4px; }
-
-    .panel-metrics {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .panel-metric {
-      background: var(--charcoal-3);
-      border-radius: var(--r);
-      padding: 14px;
-    }
-
-    .pm-label {
-      font-size: 0.625rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.28);
-      margin-bottom: 6px;
-    }
-
-    .pm-value {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: white;
-      letter-spacing: -0.05em;
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-
-    .pm-delta {
-      font-size: 0.6875rem;
-      font-weight: 600;
-      color: #4ADE80;
-    }
-
-    .panel-bars { margin-bottom: 16px; }
-
-    .bar-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 8px;
-    }
-
-    .bar-name {
-      font-size: 0.6875rem;
-      color: rgba(255,255,255,0.35);
-      width: 100px;
-      flex-shrink: 0;
-    }
-
-    .bar-track {
-      flex: 1;
-      height: 5px;
-      background: rgba(255,255,255,0.06);
-      border-radius: 3px;
-      overflow: hidden;
-    }
-
-    .bar-fill {
-      height: 100%;
-      background: var(--green);
-      border-radius: 3px;
-    }
-
-    .bar-pct {
-      font-size: 0.625rem;
-      font-weight: 600;
-      color: rgba(255,255,255,0.4);
-      width: 28px;
-      text-align: right;
-      flex-shrink: 0;
-    }
-
-    .panel-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    .panel-chip {
-      padding: 4px 10px;
-      background: rgba(85,102,83,0.18);
-      border: 1px solid rgba(85,102,83,0.28);
-      border-radius: var(--r-pill);
-      font-size: 0.6875rem;
-      font-weight: 600;
-      color: var(--green-l);
-    }
-
-    @media (max-width: 900px) {
-      .hero-inner { grid-template-columns: 1fr; }
-      .hero-panel-wrap { display: none; }
-      .hero { padding: 72px 0 64px; }
-    }
-
-    @media (max-width: 480px) {
+    @media (max-width: 460px) {
       .hero-actions { flex-direction: column; }
-      .hero-actions .btn { width: 100%; justify-content: center; }
+      .hero-actions .btn { justify-content: center; }
+      #home { padding: 72px 0 64px; }
     }
 
-    /* ============================================================
-       TICKER
-    ============================================================ */
-    .ticker {
-      background: var(--green);
-      overflow: hidden;
-      padding: 13px 0;
-      border-top: 1px solid rgba(255,255,255,0.1);
+    /* =============================================
+       SERVICES
+    ============================================= */
+    #services {
+      background: var(--grey-light);
     }
 
-    .ticker-track {
-      display: flex;
-      width: max-content;
-      animation: scroll-left 30s linear infinite;
+    .services-intro {
+      max-width: 560px;
+      margin-bottom: 52px;
     }
 
-    .ticker-track:hover { animation-play-state: paused; }
+    .services-intro h2 { margin-bottom: 12px; }
 
-    @keyframes scroll-left {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .ticker-track { animation: none; }
-    }
-
-    .ticker-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 0 28px;
-      font-size: 0.8125rem;
-      font-weight: 600;
-      color: rgba(255,255,255,0.85);
-      white-space: nowrap;
-      letter-spacing: 0.04em;
-    }
-
-    .ticker-dot {
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.4);
-      flex-shrink: 0;
-    }
-
-    /* ============================================================
-       SECTION SCAFFOLDING
-    ============================================================ */
-    .section       { padding: 96px 0; }
-    .section-alt   { background: var(--surface); }
-    .section-dark  { background: var(--charcoal); }
-
-    @media (max-width: 640px) { .section { padding: 64px 0; } }
-
-    .section-head  { margin-bottom: 52px; }
-    .section-head .eyebrow { margin-bottom: 12px; }
-    .section-head .t-h2   { margin-bottom: 12px; }
-
-    /* ============================================================
-       SERVICES GRID
-    ============================================================ */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
+      gap: 16px;
+    }
+
+    .svc {
+      background: var(--white);
       border-radius: var(--r-lg);
-      overflow: hidden;
-    }
-
-    .svc-card {
-      background: var(--surface);
       padding: 32px 28px;
-      transition: background 0.2s;
-      cursor: default;
+      border: 1px solid rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s, transform 0.2s;
     }
 
-    .svc-card--wide { grid-column: span 3; }
-
-    .svc-card:hover { background: var(--accent-faint); }
+    .svc:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,0.09);
+      transform: translateY(-2px);
+    }
 
     .svc-icon {
-      width: 46px;
-      height: 46px;
-      background: var(--accent-faint);
+      width: 44px;
+      height: 44px;
+      background: #EEF3EE;
       border-radius: var(--r);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--accent);
-      margin-bottom: 18px;
-      transition: background 0.2s, color 0.2s;
-      flex-shrink: 0;
-    }
-    .svc-card:hover .svc-icon { background: var(--green); color: white; }
-
-    .svc-card .t-h3 { color: var(--ink); margin-bottom: 8px; }
-
-    .svc-card .t-body { font-size: 0.875rem; }
-
-    .svc-more {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      margin-top: 16px;
-      font-size: 0.8125rem;
-      font-weight: 600;
       color: var(--green);
-      transition: gap 0.15s;
+      margin-bottom: 20px;
+      transition: background 0.2s, color 0.2s;
     }
-    .svc-more:hover { gap: 9px; }
-
-    .svc-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 12px;
+    .svc:hover .svc-icon {
+      background: var(--green);
+      color: white;
     }
 
-    .tag {
-      padding: 3px 10px;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--r-pill);
-      font-size: 0.75rem;
-      color: var(--ink-muted);
+    .svc h3 { margin-bottom: 10px; }
+
+    .svc .body-text { font-size: 0.875rem; }
+
+    /* "Ongoing" card spans full width */
+    .svc--ongoing {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      align-items: start;
     }
+    .svc--ongoing .svc-icon { margin-bottom: 0; flex-shrink: 0; }
 
     @media (max-width: 720px) {
       .services-grid { grid-template-columns: 1fr 1fr; }
-      .svc-card--wide { grid-column: span 2; }
-    }
-    @media (max-width: 480px) {
-      .services-grid { grid-template-columns: 1fr; }
-      .svc-card--wide { grid-column: auto; }
-      .svc-card { padding: 24px 20px; }
+      .svc--ongoing { grid-template-columns: 1fr; }
+      .svc--ongoing .svc-icon { display: none; }
     }
 
-    /* ============================================================
-       RESULTS / WHY
-    ============================================================ */
-    .results-inner {
+    @media (max-width: 480px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .svc { padding: 24px 20px; }
+    }
+
+    /* =============================================
+       ABOUT
+    ============================================= */
+    #about {
+      background: var(--white);
+      border-top: 1px solid var(--grey-light);
+    }
+
+    .about-inner {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 64px;
       align-items: start;
     }
 
-    .results-left .t-h2 { color: white; margin-top: 12px; margin-bottom: 14px; }
-    .results-left .t-lead { color: rgba(255,255,255,0.45); margin-bottom: 36px; }
+    .about-left {}
 
-    .stat-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: var(--r-lg);
-      overflow: hidden;
+    .about-left h2 { margin-bottom: 20px; }
+
+    .about-right {}
+
+    .about-body p {
+      font-size: 1rem;
+      line-height: 1.78;
+      color: var(--grey-mid);
+      margin-bottom: 18px;
     }
+    .about-body p:last-child { margin-bottom: 0; }
+    .about-body p strong { color: var(--charcoal); font-weight: 600; }
 
-    .stat-box {
-      background: var(--charcoal-2);
-      padding: 24px 22px;
-    }
-
-    .stat-num {
-      font-size: 2.25rem;
-      font-weight: 800;
-      letter-spacing: -0.05em;
-      color: var(--green-l);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-
-    .stat-label {
-      font-size: 0.8125rem;
-      color: rgba(255,255,255,0.38);
-      line-height: 1.5;
-    }
-
-    .why-list { display: flex; flex-direction: column; gap: 22px; }
-
-    .why-item { display: flex; gap: 14px; align-items: flex-start; }
-
-    .why-icon {
-      width: 38px;
-      height: 38px;
-      border-radius: var(--r);
-      background: rgba(85,102,83,0.18);
+    .about-values {
+      margin-top: 32px;
+      padding-top: 28px;
+      border-top: 1px solid var(--grey-light);
       display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--green-l);
-      flex-shrink: 0;
-    }
-
-    .why-title { font-size: 0.9375rem; font-weight: 600; color: white; margin-bottom: 4px; }
-    .why-body  { font-size: 0.875rem; color: rgba(255,255,255,0.4); line-height: 1.6; }
-
-    @media (max-width: 860px) {
-      .results-inner { grid-template-columns: 1fr; gap: 48px; }
-    }
-
-    /* ============================================================
-       PROCESS
-    ============================================================ */
-    .process-head { text-align: center; max-width: 540px; margin: 0 auto 64px; }
-    .process-head .t-h2 { margin-top: 10px; margin-bottom: 12px; }
-
-    .process-steps {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      position: relative;
-    }
-
-    .process-steps::before {
-      content: '';
-      position: absolute;
-      top: 27px;
-      left: calc(12.5% + 16px);
-      right: calc(12.5% + 16px);
-      height: 1px;
-      background: var(--border);
-    }
-
-    .step { text-align: center; }
-
-    .step-num {
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      background: var(--green);
-      color: white;
-      font-size: 0.9375rem;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .step-title { font-size: 0.9375rem; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
-    .step-body  { font-size: 0.8125rem; color: var(--ink-muted); line-height: 1.6; }
-
-    @media (max-width: 700px) {
-      .process-steps { grid-template-columns: 1fr; }
-      .process-steps::before { display: none; }
-      .step {
-        text-align: left;
-        display: flex;
-        gap: 16px;
-        align-items: flex-start;
-        padding: 20px 0;
-        border-bottom: 1px solid var(--border);
-      }
-      .step:last-child { border-bottom: none; }
-      .step-num { margin: 0; flex-shrink: 0; width: 44px; height: 44px; font-size: 0.875rem; }
-    }
-
-    /* ============================================================
-       TESTIMONIALS
-    ============================================================ */
-    .testi-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .testi-card {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--r-lg);
-      padding: 28px;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .testi-card:hover {
-      border-color: var(--green);
-      box-shadow: 0 4px 20px rgba(85,102,83,0.1);
-    }
-
-    .stars { display: flex; gap: 3px; margin-bottom: 14px; color: var(--green); font-size: 1rem; }
-
-    .testi-quote {
-      font-size: 0.9375rem;
-      line-height: 1.7;
-      color: var(--ink);
-      margin-bottom: 20px;
-    }
-
-    .testi-author { display: flex; align-items: center; gap: 11px; }
-
-    .testi-avatar {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: var(--accent-faint);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8125rem;
-      font-weight: 700;
-      color: var(--green);
-      flex-shrink: 0;
-    }
-
-    .testi-name { font-size: 0.875rem; font-weight: 600; color: var(--ink); }
-    .testi-role { font-size: 0.75rem; color: var(--ink-muted); }
-
-    @media (max-width: 780px) { .testi-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 500px) { .testi-grid { grid-template-columns: 1fr; } }
-
-    /* ============================================================
-       CTA
-    ============================================================ */
-    .cta-wrap {
-      background: var(--charcoal);
-      padding: 80px 0;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cta-glow {
-      position: absolute;
-      bottom: -120px;
-      left: -80px;
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(85,102,83,0.16) 0%, transparent 65%);
-      pointer-events: none;
-    }
-
-    .cta-inner {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 48px;
-      align-items: center;
-    }
-
-    .cta-h { font-size: clamp(1.875rem, 3vw + 0.5rem, 3rem); font-weight: 700; color: white; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 12px; text-wrap: balance; }
-
-    .cta-body { font-size: 1.0625rem; color: rgba(255,255,255,0.45); font-weight: 300; line-height: 1.65; }
-
-    .cta-aside { display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
-
-    .cta-detail {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      font-size: 0.8125rem;
-      color: rgba(255,255,255,0.32);
-    }
-    .cta-detail a { color: rgba(255,255,255,0.55); transition: color 0.15s; }
-    .cta-detail a:hover { color: white; }
-
-    @media (max-width: 640px) {
-      .cta-inner { grid-template-columns: 1fr; }
-      .cta-aside { align-items: flex-start; }
-    }
-
-    /* ============================================================
-       FOOTER
-    ============================================================ */
-    .footer {
-      background: #161618;
-      border-top: 1px solid rgba(255,255,255,0.04);
-      padding: 64px 0 32px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.6fr 1fr 1fr 1fr;
-      gap: 48px;
-      padding-bottom: 48px;
-      margin-bottom: 32px;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-
-    .footer-about-desc {
-      font-size: 0.875rem;
-      color: rgba(255,255,255,0.3);
-      line-height: 1.7;
-      margin-top: 14px;
-      margin-bottom: 20px;
-    }
-
-    .footer-socials { display: flex; gap: 8px; }
-
-    .social-btn {
-      width: 34px;
-      height: 34px;
-      border-radius: 6px;
-      background: rgba(255,255,255,0.06);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(255,255,255,0.4);
-      transition: background 0.15s, color 0.15s;
-    }
-    .social-btn:hover { background: var(--green); color: white; }
-
-    .footer-col-title {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: rgba(255,255,255,0.5);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .footer-links { display: flex; flex-direction: column; gap: 10px; }
-    .footer-links a {
-      font-size: 0.875rem;
-      color: rgba(255,255,255,0.32);
-      transition: color 0.15s;
-    }
-    .footer-links a:hover { color: rgba(255,255,255,0.72); }
-    .footer-links .highlight { color: var(--green-l) !important; font-weight: 600; }
-
-    .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 10px;
     }
 
-    .footer-copy { font-size: 0.8125rem; color: rgba(255,255,255,0.22); }
+    .value-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--charcoal);
+    }
 
-    .footer-legal { display: flex; gap: 20px; }
-    .footer-legal a { font-size: 0.8125rem; color: rgba(255,255,255,0.22); transition: color 0.15s; }
-    .footer-legal a:hover { color: rgba(255,255,255,0.5); }
+    .value-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      flex-shrink: 0;
+    }
 
-    @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
-    @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 720px) {
+      .about-inner { grid-template-columns: 1fr; gap: 36px; }
+    }
 
-    /* ============================================================
+    /* =============================================
+       CONTACT
+    ============================================= */
+    #contact {
+      background: var(--charcoal);
+      color: white;
+    }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .contact-left h2 { color: white; margin-bottom: 12px; }
+
+    .contact-left .lead { margin-bottom: 36px; }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.9375rem;
+    }
+
+    .contact-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.06);
+      border-radius: var(--r);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green-l);
+      flex-shrink: 0;
+    }
+
+    .contact-item-label {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .contact-item-value {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.9375rem;
+      transition: color 0.15s;
+    }
+    a.contact-item-value:hover { color: white; }
+
+    /* Form */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-field label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.04em;
+    }
+
+    .form-field input,
+    .form-field textarea {
+      font-family: var(--font);
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: white;
+      background: rgba(255,255,255,0.06);
+      border: 1.5px solid rgba(255,255,255,0.1);
+      border-radius: var(--r);
+      padding: 12px 14px;
+      transition: border-color 0.15s, background 0.15s;
+      resize: vertical;
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+      color: rgba(255,255,255,0.2);
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus {
+      outline: none;
+      border-color: var(--green);
+      background: rgba(85,102,83,0.08);
+    }
+
+    .form-field textarea { min-height: 120px; }
+
+    @media (max-width: 680px) {
+      .contact-inner { grid-template-columns: 1fr; gap: 48px; }
+    }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    .footer {
+      background: #161618;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 32px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-wordmark {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.8125rem;
+      color: rgba(255,255,255,0.3);
+      transition: color 0.15s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.65); }
+
+    .footer-copy {
+      width: 100%;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.2);
+    }
+
+    @media (max-width: 520px) {
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* =============================================
        REVEAL ANIMATIONS
-    ============================================================ */
+    ============================================= */
     .reveal {
       opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-                  transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+      transform: translateY(16px);
+      transition: opacity 0.5s cubic-bezier(0.22,1,0.36,1),
+                  transform 0.5s cubic-bezier(0.22,1,0.36,1);
     }
-    .reveal.visible { opacity: 1; transform: none; }
-
-    .d1 { transition-delay: 0.07s; }
-    .d2 { transition-delay: 0.14s; }
-    .d3 { transition-delay: 0.21s; }
-    .d4 { transition-delay: 0.28s; }
-    .d5 { transition-delay: 0.35s; }
+    .reveal.in { opacity: 1; transform: none; }
+    .d1 { transition-delay: 0.08s; }
+    .d2 { transition-delay: 0.16s; }
+    .d3 { transition-delay: 0.24s; }
 
     @media (prefers-reduced-motion: reduce) {
       .reveal { opacity: 1; transform: none; transition: none; }
@@ -993,30 +644,28 @@
 
   <!-- ===================== NAV ===================== -->
   <header>
-    <nav class="site-nav">
+    <nav class="nav">
       <div class="wrap">
         <div class="nav-inner">
-          <a href="/" class="nav-logo">
-            <div class="nav-mark">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <a href="#home" class="nav-logo">
+            <div class="nav-mark" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
                 <path d="M3 16L10 4L17 16" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M7 11.5h6" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
               </svg>
             </div>
-            <div>
-              <span class="nav-name">MTU Projects</span>
-              <span class="nav-tagline">Digital Marketing Solutions</span>
-            </div>
+            <span class="nav-wordmark">MTU Projects</span>
           </a>
 
-          <nav class="nav-links" aria-label="Main navigation">
+          <nav class="nav-links" aria-label="Site navigation">
+            <a href="#home" class="nav-link">Home</a>
             <a href="#services" class="nav-link">Services</a>
-            <a href="#results" class="nav-link">Results</a>
-            <a href="#process" class="nav-link">How it works</a>
-            <a href="#testimonials" class="nav-link">Reviews</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </nav>
 
-          <a href="#contact" class="btn btn-green btn-sm nav-cta">Get started</a>
+          <!-- Replace href with your Calendly link -->
+          <a href="#contact" class="btn btn-green btn-sm nav-cta">Chat Now!</a>
 
           <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
             <span></span><span></span><span></span>
@@ -1024,453 +673,195 @@
         </div>
       </div>
 
-      <div class="nav-mobile" id="navMobile" role="navigation" aria-label="Mobile navigation">
+      <div class="nav-drawer" id="navDrawer">
+        <a href="#home">Home</a>
         <a href="#services">Services</a>
-        <a href="#results">Results</a>
-        <a href="#process">How it works</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#contact" class="btn btn-green">Get started</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-green">Chat Now!</a>
       </div>
     </nav>
   </header>
 
   <main>
 
-    <!-- ===================== HERO ===================== -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-glow" aria-hidden="true"></div>
-
+    <!-- ===================== HOME ===================== -->
+    <section id="home">
       <div class="wrap">
         <div class="hero-inner">
+          <p class="eyebrow">Based in Leeds, UK</p>
 
-          <div>
-            <div class="hero-pill">
-              <span class="hero-dot" aria-hidden="true"></span>
-              <span class="hero-pill-text">Digital Marketing · Leeds, UK</span>
-            </div>
+          <h1 class="hero-heading">
+            Websites and simple automations<br>
+            for small businesses —<br>
+            <span class="green">built, then looked after.</span>
+          </h1>
 
-            <h1 class="t-display hero-heading" id="hero-heading">
-              Marketing that<br>drives <span class="accent">real growth.</span>
-            </h1>
+          <p class="hero-sub">
+            I build small business owners a website that actually explains what they do, plus a few automations that save them time day to day. Then I keep it running for a monthly fee, so it's never something they have to think about again.
+          </p>
 
-            <p class="hero-sub">
-              We help small and medium businesses across Leeds and the UK generate more leads, grow their online presence and get more from their marketing — without the agency waffle.
-            </p>
-
-            <div class="hero-actions">
-              <a href="#contact" class="btn btn-green">
-                Get a free strategy call
-                <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-              <a href="#services" class="btn btn-ghost-white">See our services</a>
-            </div>
-
-            <div class="hero-trust">
-              <p class="hero-trust-label">What we deliver</p>
-              <div class="hero-chips">
-                <span class="hero-chip">SEO</span>
-                <span class="hero-chip">PPC Advertising</span>
-                <span class="hero-chip">AI Automation</span>
-                <span class="hero-chip">Social Media</span>
-                <span class="hero-chip">Email Marketing</span>
-                <span class="hero-chip">Website Design</span>
-              </div>
-            </div>
+          <div class="hero-actions">
+            <!-- Replace href with your Calendly link, e.g. https://calendly.com/mtuprojects -->
+            <a href="#contact" class="btn btn-green">Book a free chat</a>
+            <a href="#services" class="btn btn-white-outline">See what's included</a>
           </div>
-
-          <div class="hero-panel-wrap" aria-hidden="true">
-            <div class="hero-panel">
-              <div class="panel-titlebar">
-                <div class="panel-dots">
-                  <div class="panel-dot"></div>
-                  <div class="panel-dot"></div>
-                  <div class="panel-dot"></div>
-                </div>
-                <span class="panel-title">Campaign Performance — Live Dashboard</span>
-              </div>
-
-              <div class="panel-metrics">
-                <div class="panel-metric">
-                  <div class="pm-label">Monthly leads</div>
-                  <div class="pm-value">247</div>
-                  <div class="pm-delta">↑ 34% vs last month</div>
-                </div>
-                <div class="panel-metric">
-                  <div class="pm-label">Organic traffic</div>
-                  <div class="pm-value">8.4k</div>
-                  <div class="pm-delta">↑ 61% year on year</div>
-                </div>
-                <div class="panel-metric">
-                  <div class="pm-label">Ad spend ROAS</div>
-                  <div class="pm-value">4.2×</div>
-                  <div class="pm-delta">↑ improving</div>
-                </div>
-                <div class="panel-metric">
-                  <div class="pm-label">Email open rate</div>
-                  <div class="pm-value">42%</div>
-                  <div class="pm-delta">↑ vs 21% industry avg</div>
-                </div>
-              </div>
-
-              <div class="panel-bars">
-                <div class="bar-row">
-                  <span class="bar-name">SEO ranking</span>
-                  <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
-                  <span class="bar-pct">82%</span>
-                </div>
-                <div class="bar-row">
-                  <span class="bar-name">Social reach</span>
-                  <div class="bar-track"><div class="bar-fill" style="width:67%"></div></div>
-                  <span class="bar-pct">67%</span>
-                </div>
-                <div class="bar-row">
-                  <span class="bar-name">Lead quality</span>
-                  <div class="bar-track"><div class="bar-fill" style="width:91%"></div></div>
-                  <span class="bar-pct">91%</span>
-                </div>
-              </div>
-
-              <div class="panel-chips">
-                <span class="panel-chip">SEO ✓</span>
-                <span class="panel-chip">PPC ✓</span>
-                <span class="panel-chip">Email ✓</span>
-                <span class="panel-chip">Social ✓</span>
-                <span class="panel-chip">AI Tools ✓</span>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ===================== TICKER ===================== -->
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-track">
-        <span class="ticker-item">Search Engine Optimisation</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">Pay-Per-Click Advertising</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">AI Automation</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">Social Media Marketing</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">Email Marketing</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">Reputation Management</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">Website Design &amp; Build</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <!-- duplicate for seamless loop -->
-        <span class="ticker-item">Search Engine Optimisation</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">Pay-Per-Click Advertising</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">AI Automation</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">Social Media Marketing</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">Email Marketing</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">Reputation Management</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-        <span class="ticker-item">Website Design &amp; Build</span>
-        <span class="ticker-item"><span class="ticker-dot"></span></span>
-      </div>
-    </div>
-
     <!-- ===================== SERVICES ===================== -->
-    <section id="services" class="section section-alt" aria-labelledby="services-heading">
+    <section id="services">
       <div class="wrap">
-        <header class="section-head reveal">
-          <span class="eyebrow">What we do</span>
-          <h2 class="t-h2" id="services-heading">Everything you need to grow online.</h2>
-          <p class="t-body" style="max-width:500px; font-size:1.0625rem; margin-top:4px;">Seven services, one team. We cover the full digital marketing mix so you're not juggling multiple suppliers.</p>
-        </header>
+
+        <div class="services-intro reveal">
+          <span class="eyebrow">What I build and look after</span>
+          <h2>Two things, not six.</h2>
+          <p class="body-text" style="margin-top:8px; font-size:1rem;">I don't offer a long menu of services. I do two things well, and I look after them for you on an ongoing basis so they don't go stale.</p>
+        </div>
 
         <div class="services-grid">
 
-          <div class="svc-card reveal">
+          <div class="svc reveal">
             <div class="svc-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
             </div>
-            <h3 class="t-h3">SEO</h3>
-            <p class="t-body">Get found by the right people at the right time. We improve your rankings through technical optimisation, content strategy and quality link building — sustainably, without shortcuts.</p>
-            <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3>Website Build</h3>
+            <p class="body-text">A clean, simple website — a homepage, a page about what you do, and a way for people to contact you. No bloat, no pages that don't earn their place. Built to load fast and make sense on a phone, since that's how most people will find it.</p>
           </div>
 
-          <div class="svc-card reveal d1">
+          <div class="svc reveal d1">
             <div class="svc-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             </div>
-            <h3 class="t-h3">PPC Advertising</h3>
-            <p class="t-body">Targeted paid campaigns across Google and Bing that bring in qualified leads — not just clicks. Every pound tracked, attributed and optimised for return on ad spend.</p>
-            <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3>Simple Automations</h3>
+            <p class="body-text">Small pieces of setup that save you time — things like auto-replying to enquiries, sending booking reminders, connecting a contact form straight to email or a spreadsheet, or sorting incoming leads. Explained plainly, set up once, left running quietly in the background.</p>
           </div>
 
-          <div class="svc-card reveal d2">
+          <div class="svc svc--ongoing reveal d2">
             <div class="svc-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1010 10"/><path d="M22 2L12 12M22 2h-6M22 2v6"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 12a11 11 0 01-22 0"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
             </div>
-            <h3 class="t-h3">AI Automation</h3>
-            <p class="t-body">Practical AI tools that save time and reduce repetition. From automated follow-up sequences to smart content tools — built to fit your actual workflow, not a generic template.</p>
-            <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div>
+              <h3 style="margin-bottom:10px;">The Ongoing Bit</h3>
+              <p class="body-text">Both come with a monthly management fee. That covers hosting, keeping things working, small updates, and adjusting the automations as the business changes — instead of a one-off job that goes stale in six months.</p>
+            </div>
           </div>
 
-          <div class="svc-card reveal">
-            <div class="svc-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+      <div class="wrap">
+        <div class="about-inner">
+
+          <div class="about-left reveal">
+            <span class="eyebrow">About</span>
+            <h2>I'm Monty.</h2>
+
+            <div class="about-values">
+              <div class="value-item"><span class="value-dot"></span>Results driven</div>
+              <div class="value-item"><span class="value-dot"></span>Transparent</div>
+              <div class="value-item"><span class="value-dot"></span>No jargon</div>
+              <div class="value-item"><span class="value-dot"></span>Client focused</div>
+              <div class="value-item"><span class="value-dot"></span>Reliable</div>
             </div>
-            <h3 class="t-h3">Social Media Marketing</h3>
-            <p class="t-body">Content, strategy and management across the platforms that matter for your audience. We grow your reach and turn followers into customers with copy and creative that actually converts.</p>
-            <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </div>
 
-          <div class="svc-card reveal d1">
-            <div class="svc-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div class="about-right reveal d1">
+            <div class="about-body">
+              <p>
+                I started MTU Projects after my regular 9-to-5, as a way to build things and keep learning. <strong>I'm not claiming years of agency experience or a big team</strong> — because there isn't one yet. What there is: someone who picks things up quickly, is upfront when something needs explaining twice, and is starting by helping people I know — friends and small businesses I have a real connection to — build a website and a few automations, then keep it running for them.
+              </p>
+              <p>
+                The plan is simple: do good work for a few people first, learn from it, and grow from there.
+              </p>
+              <p>
+                If you want to talk through what you'd need, <a href="#contact" style="color:var(--green); font-weight:600;">book a free chat</a> — I'll give you a straight answer on whether I can help, and a clear price if I can.
+              </p>
             </div>
-            <h3 class="t-h3">Email Marketing</h3>
-            <p class="t-body">Campaigns, sequences and newsletters that people actually open. We write, design and send — and consistently deliver above-industry open and click-through rates.</p>
-            <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </div>
 
-          <div class="svc-card reveal d2">
-            <div class="svc-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </div>
-            <h3 class="t-h3">Reputation Management</h3>
-            <p class="t-body">Build and protect your online reputation. We help you gather more reviews, respond to feedback professionally and make sure your business stands out on Google for the right reasons.</p>
-            <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="svc-card svc-card--wide reveal">
-            <div style="display:flex; gap:20px; align-items:flex-start;">
-              <div class="svc-icon" style="margin-bottom:0; flex-shrink:0;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-inner">
+
+          <div class="contact-left reveal">
+            <span class="eyebrow" style="color:var(--green-l);">Get in touch</span>
+            <h2>Let's talk.</h2>
+            <p class="lead" style="margin-bottom:36px;">
+              Book a free 30-minute chat and I'll tell you honestly whether I can help — and what it would cost.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .99h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Phone</span>
+                  <a href="tel:+447754208536" class="contact-item-value">+44 7754 208536</a>
+                </div>
               </div>
-              <div>
-                <h3 class="t-h3" style="margin-bottom:8px;">Website Design &amp; Build</h3>
-                <p class="t-body">Fast, clean websites designed to generate enquiries — not just look good in a portfolio. We build sites that load in under 2 seconds, rank in search results and turn visitors into leads. No page builders, no bloated themes, no ongoing dependency on us to make basic changes.</p>
-                <div class="svc-tags">
-                  <span class="tag">Conversion-focused design</span>
-                  <span class="tag">Mobile-first</span>
-                  <span class="tag">SEO-ready</span>
-                  <span class="tag">Fast load times</span>
-                  <span class="tag">CMS optional</span>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Email</span>
+                  <a href="mailto:info@mtuprojects.com" class="contact-item-value">info@mtuprojects.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Location</span>
+                  <span class="contact-item-value">Leeds, UK</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Web</span>
+                  <a href="https://www.mtuprojects.com" class="contact-item-value">www.mtuprojects.com</a>
                 </div>
               </div>
             </div>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== RESULTS ===================== -->
-    <section id="results" class="section section-dark" aria-labelledby="results-heading">
-      <div class="wrap">
-        <div class="results-inner">
-
-          <div class="results-left">
-            <div class="reveal">
-              <span class="eyebrow" style="color: var(--green-l);">Why MTU Projects</span>
-              <h2 class="t-h2" id="results-heading">We measure what matters. And we report on it honestly.</h2>
-              <p class="t-lead" style="margin-bottom:36px;">No vanity metrics. No confusing dashboards. Just clear numbers showing whether your marketing is working and what to do next.</p>
-            </div>
-
-            <div class="stat-grid reveal d1">
-              <div class="stat-box">
-                <div class="stat-num">3×</div>
-                <div class="stat-label">Average improvement in lead volume within 6 months</div>
+          <div class="contact-right reveal d1">
+            <!-- Replace action with your form handler (Formspree, EmailJS, etc.) -->
+            <form class="contact-form" name="contact" method="POST" action="#" novalidate>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
               </div>
-              <div class="stat-box">
-                <div class="stat-num">48h</div>
-                <div class="stat-label">Clear scope and price back to you after first contact</div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
               </div>
-              <div class="stat-box">
-                <div class="stat-num">100%</div>
-                <div class="stat-label">Transparent reporting — you own all your accounts and data</div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me what you're looking for — even roughly is fine." required></textarea>
               </div>
-              <div class="stat-box">
-                <div class="stat-num">SME</div>
-                <div class="stat-label">Built for small and medium businesses, priced fairly</div>
-              </div>
-            </div>
+              <button type="submit" class="btn btn-green" style="width:100%; justify-content:center;">Send message</button>
+            </form>
           </div>
 
-          <div class="why-list">
-            <div class="why-item reveal">
-              <div class="why-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              </div>
-              <div>
-                <div class="why-title">Plain English, always</div>
-                <div class="why-body">We explain what we're doing and why. No jargon, no slide decks where an email would do.</div>
-              </div>
-            </div>
-
-            <div class="why-item reveal d1">
-              <div class="why-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-              </div>
-              <div>
-                <div class="why-title">Transparent, fair pricing</div>
-                <div class="why-body">No hidden fees, no lock-in. We agree price upfront and stick to it.</div>
-              </div>
-            </div>
-
-            <div class="why-item reveal d2">
-              <div class="why-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-              </div>
-              <div>
-                <div class="why-title">Fast to start</div>
-                <div class="why-body">Most clients are live within 2 weeks. No lengthy discovery phases, no wasted time.</div>
-              </div>
-            </div>
-
-            <div class="why-item reveal d3">
-              <div class="why-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-              </div>
-              <div>
-                <div class="why-title">A team that knows your market</div>
-                <div class="why-body">We work with SMEs across Leeds and the UK — we understand what makes local buyers act.</div>
-              </div>
-            </div>
-
-            <div class="why-item reveal d4">
-              <div class="why-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-              </div>
-              <div>
-                <div class="why-title">AI-powered, human-led</div>
-                <div class="why-body">We use the latest AI tools to work faster — but every strategy and campaign is human-reviewed.</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== PROCESS ===================== -->
-    <section id="process" class="section" aria-labelledby="process-heading">
-      <div class="wrap">
-        <header class="process-head reveal">
-          <span class="eyebrow">How it works</span>
-          <h2 class="t-h2" id="process-heading">Simple from first call to results.</h2>
-          <p class="t-body">No long onboarding. No waiting months to see movement. We move fast and keep you in the loop.</p>
-        </header>
-
-        <div class="process-steps">
-          <div class="step reveal">
-            <div class="step-num">1</div>
-            <div>
-              <div class="step-title">Tell us what you need</div>
-              <div class="step-body">Book a free 30-minute call or send an email. Tell us about your business and your marketing goals — however roughly.</div>
-            </div>
-          </div>
-          <div class="step reveal d1">
-            <div class="step-num">2</div>
-            <div>
-              <div class="step-title">We build your strategy</div>
-              <div class="step-body">We come back with a clear plan, a fixed price and a realistic timeline. No surprises, no jargon, no upselling.</div>
-            </div>
-          </div>
-          <div class="step reveal d2">
-            <div class="step-num">3</div>
-            <div>
-              <div class="step-title">We get to work</div>
-              <div class="step-body">Campaigns launch quickly. You get access to a live reporting dashboard and a direct line to your account manager.</div>
-            </div>
-          </div>
-          <div class="step reveal d3">
-            <div class="step-num">4</div>
-            <div>
-              <div class="step-title">You see the results</div>
-              <div class="step-body">Monthly reports, regular check-ins and continuous optimisation. We keep improving until the numbers speak for themselves.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== TESTIMONIALS ===================== -->
-    <section id="testimonials" class="section section-alt" aria-labelledby="testi-heading">
-      <div class="wrap">
-        <header class="section-head reveal">
-          <span class="eyebrow">Client results</span>
-          <h2 class="t-h2" id="testi-heading">What our clients say.</h2>
-        </header>
-
-        <div class="testi-grid">
-
-          <div class="testi-card reveal">
-            <div class="stars" aria-label="5 stars">★★★★★</div>
-            <p class="testi-quote">"MTU Projects transformed our online presence. Our leads have tripled in six months and the reporting is actually useful — I can see exactly what's working and what isn't."</p>
-            <div class="testi-author">
-              <div class="testi-avatar" aria-hidden="true">SB</div>
-              <div>
-                <div class="testi-name">Sarah B.</div>
-                <div class="testi-role">Owner, Leeds-based retail business</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card reveal d1">
-            <div class="stars" aria-label="5 stars">★★★★★</div>
-            <p class="testi-quote">"We'd tried two agencies before and been burned both times. MTU were straight with us from day one — no promises they couldn't keep. The SEO results have been brilliant."</p>
-            <div class="testi-author">
-              <div class="testi-avatar" aria-hidden="true">MR</div>
-              <div>
-                <div class="testi-name">Mark R.</div>
-                <div class="testi-role">Director, professional services firm</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card reveal d2">
-            <div class="stars" aria-label="5 stars">★★★★★</div>
-            <p class="testi-quote">"The AI automation tools they built save about 6 hours a week. That's real time back in the business. The website they built is also the fastest and cleanest we've ever had."</p>
-            <div class="testi-author">
-              <div class="testi-avatar" aria-hidden="true">JT</div>
-              <div>
-                <div class="testi-name">James T.</div>
-                <div class="testi-role">MD, e-commerce business, West Yorkshire</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== CTA ===================== -->
-    <section id="contact" class="cta-wrap" aria-labelledby="cta-heading">
-      <div class="cta-glow" aria-hidden="true"></div>
-      <div class="wrap">
-        <div class="cta-inner">
-          <div class="reveal">
-            <h2 class="cta-h" id="cta-heading">Ready to get more from your marketing?</h2>
-            <p class="cta-body">Book a free 30-minute strategy call. We'll look at what you're currently doing, where the gaps are and what we'd do differently. No obligation, no sales pitch.</p>
-          </div>
-          <div class="cta-aside reveal d1">
-            <a href="tel:+447903647007" class="btn btn-green">
-              Book a free call
-              <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <div class="cta-detail">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:hello@mtuprojects.com">hello@mtuprojects.com</a>
-            </div>
-            <div class="cta-detail">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .99h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-              <a href="tel:+447903647007">+44 7903 647007</a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -1480,117 +871,74 @@
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="wrap">
-      <div class="footer-grid">
-
-        <div>
-          <a href="/" class="nav-logo" style="display:inline-flex; margin-bottom:0;">
-            <div class="nav-mark">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M3 16L10 4L17 16" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M7 11.5h6" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div>
-              <span class="nav-name">MTU Projects</span>
-              <span class="nav-tagline">Digital Marketing Solutions</span>
-            </div>
-          </a>
-          <p class="footer-about-desc">Helping small and medium businesses across Leeds and the UK generate leads, grow their online presence and get real results from digital marketing.</p>
-          <div class="footer-socials">
-            <a href="#" class="social-btn" aria-label="Facebook">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-            </a>
-            <a href="#" class="social-btn" aria-label="Instagram">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="#" class="social-btn" aria-label="LinkedIn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            <a href="#" class="social-btn" aria-label="YouTube">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
-            </a>
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <div class="nav-mark" aria-hidden="true" style="width:26px;height:26px;border-radius:6px;">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="none">
+              <path d="M3 16L10 4L17 16" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 11.5h6" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
           </div>
+          <span class="footer-wordmark">MTU Projects</span>
         </div>
 
-        <div>
-          <div class="footer-col-title">Services</div>
-          <nav class="footer-links" aria-label="Services links">
-            <a href="#">SEO</a>
-            <a href="#">PPC Advertising</a>
-            <a href="#">AI Automation</a>
-            <a href="#">Social Media</a>
-            <a href="#">Email Marketing</a>
-            <a href="#">Reputation Management</a>
-            <a href="#">Website Design</a>
-          </nav>
-        </div>
+        <nav class="footer-links" aria-label="Footer links">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="mailto:info@mtuprojects.com">info@mtuprojects.com</a>
+        </nav>
 
-        <div>
-          <div class="footer-col-title">Company</div>
-          <nav class="footer-links" aria-label="Company links">
-            <a href="#">About us</a>
-            <a href="#">How it works</a>
-            <a href="#">Case studies</a>
-            <a href="#">Blog</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Get in touch</div>
-          <div class="footer-links">
-            <a href="mailto:hello@mtuprojects.com">hello@mtuprojects.com</a>
-            <a href="tel:+447903647007">+44 7903 647007</a>
-            <a href="#">Leeds, UK</a>
-            <a href="#contact" class="highlight" style="margin-top:8px;">Book a free call →</a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <span class="footer-copy">© 2025 MTU Projects. All rights reserved.</span>
-        <div class="footer-legal">
-          <a href="#">Privacy policy</a>
-          <a href="#">Terms</a>
-          <a href="#">Cookies</a>
-        </div>
+        <p class="footer-copy">© 2025 MTU Projects. All rights reserved. Leeds, UK.</p>
       </div>
     </div>
   </footer>
 
   <script>
     // Mobile nav
-    const navToggle = document.getElementById('navToggle');
-    const navMobile = document.getElementById('navMobile');
-    navToggle.addEventListener('click', () => {
-      const open = navMobile.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', String(open));
+    const toggle = document.getElementById('navToggle');
+    const drawer = document.getElementById('navDrawer');
+    toggle.addEventListener('click', () => {
+      const open = drawer.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
     });
-    navMobile.querySelectorAll('a').forEach(a => {
+    drawer.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
-        navMobile.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
+        drawer.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
       });
     });
 
-    // Scroll-reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver(
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver(
       entries => entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+        if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
       }),
-      { threshold: 0.1, rootMargin: '0px 0px -36px 0px' }
+      { threshold: 0.1, rootMargin: '0px 0px -32px 0px' }
     );
-    reveals.forEach(el => observer.observe(el));
+    revealEls.forEach(el => obs.observe(el));
 
-    // Smooth scroll for in-page links
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
       });
     });
+
+    // Basic form feedback (replace with real handler)
+    const form = document.querySelector('.contact-form');
+    if (form) {
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        btn.textContent = 'Sent — I\'ll be in touch soon.';
+        btn.disabled = true;
+        btn.style.background = 'var(--green-d)';
+      });
+    }
   </script>
+
 </body>
 </html>
