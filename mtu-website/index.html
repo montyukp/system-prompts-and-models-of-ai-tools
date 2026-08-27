@@ -843,7 +843,10 @@
           </div>
 
           <div class="contact-right reveal d1">
-            <form class="contact-form" name="contact" method="POST" action="https://formspree.io/f/myeygzgg">
+            <form class="contact-form" name="contact" method="POST" action="https://api.web3forms.com/submit">
+              <input type="hidden" name="access_key" value="75851390-69c8-475e-ae09-3f8d5706b72d">
+              <input type="hidden" name="subject" value="New enquiry from MTU Projects website">
+              <input type="hidden" name="from_name" value="MTU Projects Website">
               <div class="form-field">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
@@ -925,7 +928,7 @@
       });
     });
 
-    // Formspree AJAX submission
+    // Web3Forms AJAX submission
     const form = document.querySelector('.contact-form');
     if (form) {
       form.addEventListener('submit', async e => {
@@ -934,12 +937,13 @@
         btn.textContent = 'Sending…';
         btn.disabled = true;
         try {
-          const res = await fetch(form.action, {
+          const res = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             body: new FormData(form),
             headers: { 'Accept': 'application/json' }
           });
-          if (res.ok) {
+          const data = await res.json();
+          if (data.success) {
             btn.textContent = 'Sent — I\'ll be in touch soon.';
             btn.style.background = 'var(--green-d)';
             form.reset();
