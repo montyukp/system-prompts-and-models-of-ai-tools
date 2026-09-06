@@ -174,6 +174,16 @@ A phased plan, each item with owner, effort estimate and dependency:
 
 Include a **launch checklist** and the ongoing cadence as a table.
 
+### Phase 7b — Hand-off gate
+
+Before a build you produced goes live or leaves your hands, run
+`references/handoff-checklist.md`. Gate 1 (truthfulness) is a stop-ship: design
+placeholders that were harmless in a mockup — invented reviews and ratings,
+plausible-sounding testimonials, stock photos in a "our work" gallery,
+accreditation badges the business doesn't hold — become misrepresentation the
+moment they sit on a real trading business's domain. Strip them or replace them
+with something true, and never soften this to "flag for later".
+
 ### Phase 8 — Write the deliverables
 
 Write files to `seo-rebuild/<domain>/`:
