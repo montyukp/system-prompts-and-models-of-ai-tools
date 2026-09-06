@@ -177,7 +177,8 @@ Include a **launch checklist** and the ongoing cadence as a table.
 ### Phase 7b — Hand-off gate
 
 Before a build you produced goes live or leaves your hands, run
-`references/handoff-checklist.md`. Gate 1 (truthfulness) is a stop-ship: design
+`references/handoff-checklist.md` — eight gates, from truthfulness through to
+the agency credit and the hand-over pack. Gate 1 (truthfulness) is a stop-ship: design
 placeholders that were harmless in a mockup — invented reviews and ratings,
 plausible-sounding testimonials, stock photos in a "our work" gallery,
 accreditation badges the business doesn't hold — become misrepresentation the

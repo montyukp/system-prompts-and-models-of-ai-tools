@@ -101,7 +101,50 @@ pexels|unsplash|shutterstock|istockphoto
 - [ ] Old site's URLs 301-mapped to the new ones, one hop, tested.
 - [ ] Core Web Vitals within budget on mobile.
 
-## Gate 7 — Hand-over pack
+## Gate 7 — Agency credit
+
+Standard on every build: a single credit line in the footer. It is one of the
+few free lead sources an agency has — someone likes a site, scrolls down, finds
+out who made it. Four conditions, all of them non-optional.
+
+- [ ] **Agreed in writing before the build starts.** Put it in the proposal or
+      contract, not sprung on the client at hand-over. Suggested wording:
+
+      > MTU Projects retains a small credit link in the website footer, reading
+      > "Website by MTU Projects". It can be removed at any time on request.
+
+      Some agencies discount the build for keeping it, or charge a one-off fee
+      to remove it. Either turns it into an explicit trade rather than an
+      assumption. Decide the policy once and apply it consistently.
+
+- [ ] **Brand anchor text only.** The link text is the agency name — nothing
+      else:
+
+      ```html
+      <p class="site-credit">
+        Website by <a href="https://mtuprojects.co.uk/" rel="noopener">MTU Projects</a>
+      </p>
+      ```
+
+      Never keyword anchors such as "web design Leeds" or "website designer
+      Leeds". The same keyword-anchored link repeated in the footer of every
+      client site is a textbook link-scheme pattern: Google devalues it at best
+      and counts it against the agency at worst. The temptation is strongest
+      when those are exactly the phrases the agency is trying to rank for —
+      resist it. A brand-anchored credit is legitimate attribution and holds up.
+
+- [ ] **Visually modest.** One line of small text beside the copyright, in the
+      muted footer colour. No logo, no styling that competes with the client's
+      own branding. It is a credit, not an advertisement.
+
+- [ ] **Removed on request, immediately and without argument.** It is the
+      client's website.
+
+Also check the reverse: **remove the previous agency's credit** if you have
+rebuilt their site. Leftover "Website designed by <old agency>" lines are common
+in rebuilds and pass link equity to a competitor from a site you now maintain.
+
+## Gate 8 — Hand-over pack
 
 The client owns their business's infrastructure. Hand it over in writing:
 
